@@ -11,16 +11,30 @@
     <h2>Pagina 2</h2>
     <hr />
 
-    <button id="myButton">Click me!</button>
+    <input type="text" name="" id="num1">
+    <input type="text" name="" id="num2">
+
+    <button id="myButton">Sumar</button>
+
+    <hr>
+    Resultado: <p id="resultado"></p>
 
     <script>
         var mybutton = document.getElementById('myButton');
+        var num1 = document.getElementById('num1');
+        var num2 = document.getElementById('num2');
+        var resultado = document.getElementById('resultado');
 
-        var clickFunction = function() {
-            alert('¡Hola mundo!');
+        var sumar = function() {
+            // console.log('num1', num1.value, typeof num1.value);
+            // console.log('num2', num2.value, typeof num2.value);
+            var sumatoria = parseInt(num1.value) + parseInt(num2.value);
+            // console.log(resultado);
+            resultado.innerText = sumatoria;
+            // document.getElementById('resultado').innerText = resultado;
         };
         
-        mybutton.addEventListener('click', clickFunction);
+        mybutton.addEventListener('click', sumar);
     </script>
 </body>
 </html>
