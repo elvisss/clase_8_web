@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <a href="pagina.html">Ir a página 1</a>
+    <h2>Pagina 2</h2>
+    <hr />
+
+    <button id="myButton">Click me!</button>
+
+    <script>
+        var mybutton = document.getElementById('myButton');
+
+        var clickFunction = function() {
+            alert('¡Hola mundo!');
+        };
+        
+        mybutton.addEventListener('click', clickFunction);
+    </script>
+</body>
+</html>

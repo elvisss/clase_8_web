@@ -8,3 +8,16 @@ footer {
 footer p {
     font-style: italic;
 }
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
