@@ -16,8 +16,13 @@
 
     <button id="myButton">Sumar</button>
 
+    Resultado: <span id="resultado"></span>
+
     <hr>
-    Resultado: <p id="resultado"></p>
+
+    <button id="toggleBtn">Show/Hide</button>
+
+    <div id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, veniam quia necessitatibus ratione molestias molestiae accusantium minima labore obcaecati! Possimus totam maiores eum minus perferendis saepe, laboriosam illo quam voluptas!</div>
 
     <script>
         var mybutton = document.getElementById('myButton');
@@ -35,6 +40,20 @@
         };
         
         mybutton.addEventListener('click', sumar);
+
+        //
+
+        var toggleBtn = document.getElementById('toggleBtn');
+        var content = document.getElementById('content');
+
+        toggleBtn.addEventListener('click', function() {
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                content.style.color = 'blue';
+            } else {
+                content.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
