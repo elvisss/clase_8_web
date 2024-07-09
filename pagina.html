@@ -4,24 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primera página web</title>
+    <style>
+        p {
+            color: green;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: red;
+            font-size: 40px;
+        }
+
+        ol li {
+            background-color: yellow;
+        }
+
+        .my-class {
+            color: rgb(0, 128, 45);
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: blue;
+        }
+    </style>
 </head>
 <body style="background-color: #c8c8c8;">
     <header style="background-color: rgb(0 128 0 / 50%);">
         <h1 style="color: blue; font-family: Arial, Helvetica, sans-serif;">¡Hola mundo!</h1>
-        <p>Esta es mi primera página web</p>
+        <h2 class="subtitle">Este es un subtitulo 1</h2>
+        <h2 class="subtitle">Este es un subtitulo 2</h2>
+        <h2>Otro subtitulo</h2>
+        <p>Esta es mi <em>primera</em> <span style="color: red;">página web</span></p>
     </header>
     <nav>
         <ul>
             <li><a target="_blank" href="https://www.google.com">google 😅</a></li>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="pagina.html">Página</a></li>
+            <li class="my-class">Página</li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
+
+        <ol>
+            <li>Elemento 1</li>
+            <li class="my-class">Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
     </nav>
 
     <main>
         <h2>Contenido principal</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet molestias illum earum dolore exercitationem sed! Numquam, esse aliquid, consequatur aspernatur cum ipsam vero voluptatem libero repellendus et dolor saepe fuga.</p>
+        <div>hola</div>
         <img src="img/idat.png" alt="Imagen aleatoria" />
     </main>
 
